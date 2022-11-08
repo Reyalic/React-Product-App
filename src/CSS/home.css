@@ -1,0 +1,46 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20em;
+}
+
+.home-screen {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(119, 19, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-screen h2 {
+    color: #ffffff;
+}
+.home-screen p {
+    margin: 15px 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-home input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 4px;
+    color: #ffffff;
+    margin: 12px;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+}
+.home-btn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: rgba(207, 207, 207, 0.88);
+    position: relative;
+    left: calc(50% - 22px);
+    cursor: pointer;
+}
