@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Pagination = ({productsPerPage, totalProducts, paginate}) => {
     const pageNumbers = []
@@ -11,9 +11,9 @@ const Pagination = ({productsPerPage, totalProducts, paginate}) => {
     <nav className='pagination'>
         <ul>
             {pageNumbers.map(number => (
-                <Link className='page-number' key={number} onClick={() => paginate(number)} href="!#/products">
+                <NavLink to="/products" className='page-number' key={number} onClick={() => paginate(number)}>
                     <li>{number}</li>
-                </Link>
+                </NavLink>
             ))}
         </ul>
     </nav>

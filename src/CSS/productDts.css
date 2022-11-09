@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .details-container {
@@ -53,6 +54,7 @@
 
 .details-body {
     padding: 0 20px;
+    margin-bottom: 40px;
 }
 
 .details-list {
@@ -60,21 +62,16 @@
 }
 
 .details-list li {
-    text-align: justify;
+    text-align: center;
+    margin: 8px 0;
+}
+.details-list li i {
+  margin-left: 8px;
+  color: rgb(247, 152, 0);
 }
 
 .details-container h4 {
     text-align: center;
-}
-.cart {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.cart button {
-    margin: 5px;
-    width: 25px;
-    height: 25px;
 }
 
 @media (max-width: 400px) {

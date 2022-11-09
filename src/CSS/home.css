@@ -6,9 +6,10 @@
 
 .home-screen {
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    height: 400px;
+    border-radius: 20px;
     background-color: rgb(119, 19, 19);
+    box-shadow: 0px 0px 6px rgb(55, 55, 55);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,16 +17,33 @@
 }
 .home-screen h2 {
     color: #ffffff;
+    font-size: 35px;
+    border-right: 3px solid;
+    animation: typing 1s steps(8),blink .5s infinite step-end;
+    overflow: hidden;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+}
+
 .home-screen p {
     margin: 15px 0;
     color: #ffffff;
     font-weight: bold;
 }
 
+.form-container {
+    padding: 20px;
+    background-color: rgb(90, 85, 85);
+    box-shadow: 0px 0px 6px rgb(55, 55, 55);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
 .form-home input {
     display: flex;
-    flex-direction: column;
     border: none;
     padding: 4px;
     color: #ffffff;
@@ -43,4 +61,8 @@
     position: relative;
     left: calc(50% - 22px);
     cursor: pointer;
+}
+
+.home-btn:hover {
+    background-color: gray;
 }

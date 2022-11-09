@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import MoonIcon from '../../assets/MoonIcon'
 import SunIcon from '../../assets/SunIcon'
 import "../../CSS/header.css"
@@ -19,8 +20,10 @@ const Header = ({theme, setTheme}) => {
           <Theme themeToggler={themeToggler} />
           <MoonIcon />
         </div>
-        <h1>Product App</h1>
-        <a href="" className="fa-brands fa-github git-logo"></a>
+        <NavLink to="/products" className='title'>
+          <h1>Product App</h1>
+        </NavLink>
+        <a href="https://github.com/Reyalic/React-Product-App" target="_blank" className="fa-brands fa-github git-logo"></a>
     </header>
   )
 }

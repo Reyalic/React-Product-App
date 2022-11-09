@@ -25,11 +25,13 @@ const Home = () => {
     <div className='home-container'>
       <div className='home-screen'>
         <h2>Welcome!</h2>
-        <p>To Start give me your name</p>
-        <form onSubmit={handleSubmit} className="form-home">
-          <input id='name' type="text" placeholder='Type your name'/>
-          <button className="fa-solid fa-forward home-btn"></button>
-        </form>
+        <div className='form-container'>
+          <p>To Start give me your name</p>
+          <form onSubmit={handleSubmit} className="form-home">
+            <input id='name' type="text" placeholder='Type your name'/>
+            <button className="fa-solid fa-forward home-btn"></button>
+          </form>
+        </div>
       </div>
     </div>
 

@@ -10,9 +10,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme, GlobalStyles } from './themes'
 import { useState } from 'react'
 import "./CSS/switch.css"
-import SunIcon from "./assets/SunIcon"
-import MoonIcon from "./assets/MoonIcon"
-import Theme from './components/Shared/Theme'
 
 const StyledApp = styled.div``
 

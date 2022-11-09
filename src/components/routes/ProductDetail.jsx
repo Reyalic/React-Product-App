@@ -1,9 +1,10 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import "../../CSS/productDts.css"
 import SliderImg from '../productDetail/SliderImg'
+import Data from '../productDetail/Data'
 
 const ProductDetail = () => {
 
@@ -19,30 +20,13 @@ const ProductDetail = () => {
       .catch(err => console.log(err))
   }, [])
 
-  // console.log(item)
-
   return (
-    <article className='details-section'>
-      <div className='details-container'>
-        <SliderImg item={item} />
-        <div className='details-body'>
-          <h2>{item?.title}</h2>
-          <p>{item?.description}</p>
-          <span>${item?.price}.00</span>
-          <ul className='details-list'>
-            <li>{item?.rating}</li>
-            <li>{item?.stock}</li>
-            <li>{item?.brand}</li>
-          </ul>
+      <article className='details-section'>
+        <div className='details-container'>
+          <SliderImg item={item} />
+          {<Data item={item} />}
         </div>
-        <h4>Add to Cart</h4>
-        <div className='cart'>
-          <button>-</button>
-          <button>+</button>
-        </div>
-      </div>
-    </article>
-    
+      </article>
   )
 }
 
