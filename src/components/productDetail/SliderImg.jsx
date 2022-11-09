@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 
 const SliderImg = ({item}) => {
     
+  //Getting the number of images per product and the current image
   const [indexImg, setIndexImg] = useState(0)
-
   const imgAmount = item?.images.length
 
+  //Slider logic
   const objStyle = {
     width: `calc(${imgAmount} * 100%)`,
     transform: `translateX(calc(-${indexImg / imgAmount} * 100%))`

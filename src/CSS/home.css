@@ -1,7 +1,7 @@
 .home-container {
     display: flex;
     justify-content: center;
-    margin-top: 20em;
+    margin: 70px 0;
 }
 
 .home-screen {
